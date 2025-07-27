@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Mónica</title>
+  <link rel="icon" href="/image/monica.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<header>
+  <!-- Navbar - Corregida para mejor visibilidad -->
+  <nav class="bg-black/70 fixed w-full z-50 top-0 shadow-md backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-3xl amatic font-bold text-white">Mónica</a>
+      <ul class="flex space-x-6 text-xl amatic">
+        <li><a href="#galeria" class="text-white hover:text-[#FF8C94] transition-colors">Mis Obras</a></li>
+        <li><a href="/page/details.html" class="text-white hover:text-[#FF8C94] transition-colors">Detalles</a></li>
+        <li><a href="#sobre-mi" class="text-white hover:text-[#FF8C94] transition-colors">Sobre Mí</a></li>
+        <li><a href="#contacto" class="text-white hover:text-[#FF8C94] transition-colors">Conectemos</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <!-- Hero Section - Mantenida igual -->
+  <section class="hero bg-pattern">
+    <div class="absolute inset-0">
+
+
+      <img src="./image/monica.png" alt="Ilustración destacada de Mónica"
+        class="w-70 h-auto object-cover mx-auto mt-32 relative z-10" />
+
+
+    </div>
+    <div
+      class="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-[#FFF5EE]/80 p-8 rounded-lg">
+      <h1 class="text-7xl amatic font-bold text-[#FF8C94]">[Mónica]</h1>
+      <p class="text-3xl amatic text-[#87CEEB] mt-4">"Creando mundos donde la imaginación florece"</p>
+    </div>
+  </section>
+
+
+  <!-- Gallery Section - Completamente rediseñada -->
+  <section class="gallery-container py-20" id="galeria">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-6xl amatic font-bold text-white mb-4 fade-up">Mis Obras</h2>
+        <p class="text-xl text-white/80 max-w-2xl mx-auto fade-up stagger-1">
+          Cada pieza cuenta una historia única, fusionando técnica y emoción para crear experiencias visuales
+          inolvidables
+        </p>
+      </div>
+
+
+
+      <div class="filter-container fade-up stagger-2">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="Naturaleza">Princesas</button>
+        <button class="filter-btn" data-filter="Personajes">Personajes</button>
+        <button class="filter-btn" data-filter="Fantasía">Fantasía</button>
+      </div>
+
+      <div class="illustration-grid" id="artworkGrid">
+        <div class="artwork-card" data-category="Naturaleza">
+          <div class="artwork-image">
+            <img src="/image/todas.png">
+            <div class="artwork-overlay">
+              <a href="/page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Susurros del Bosque</h3>
+            <p class="text-white/80 text-sm">Una exploración poética de la serenidad natural, donde cada hoja cuenta una
+              historia susurrada por el viento.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Personajes">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Blancanieves con una manzana en la mano">
+            <div class="artwork-overlay">
+              <a href="page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Blancanieves</h3>
+            <p class="text-white/80 text-sm">Una princesa encantadora atrapada entre la inocencia y la tentación.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Fantasía">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Reino de las Nubes">
+            <div class="artwork-overlay">
+              <a href="page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Reino de las Nubes</h3>
+            <p class="text-white/80 text-sm">Una dimensión etérea donde la arquitectura imposible danza entre nubes de
+              algodón y sueños cristalizados.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Naturaleza">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Océano de Memorias">
+            <div class="artwork-overlay">
+              <a href="/page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Océano de Memorias</h3>
+            <p class="text-white/80 text-sm">Las olas se convierten en recuerdos líquidos, cada una portando historias
+              del pasado hacia la eternidad.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Fantasía">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Guardiana de Estrellas">
+            <div class="artwork-overlay">
+              <a href="/page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Guardiana de Estrellas</h3>
+            <p class="text-white/80 text-sm">Una figura mística que protege los secretos del cosmos, tejiendo
+              constelaciones con hilos de luz pura.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Personajes">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Alma de Fuego">
+            <div class="artwork-overlay">
+              <a href="#" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Alma de Fuego</h3>
+            <p class="text-white/80 text-sm">La pasión hecha forma, un personaje que irradia la intensidad de mil soles
+              en su mirada determinada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section - Rediseñada -->
+  <section class="about-section py-20" id="sobre-mi">
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="profile-card fade-up">
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <img src="/image/photo.png" alt="Foto de Monica" class="profile-image">
+            <div class="text-center lg:text-left">
+              <h2 class="text-5xl amatic font-bold text-white mb-6 fade-up stagger-1">Sobre Mí</h2>
+              <p class="text-white/90 text-lg leading-relaxed mb-6 fade-up stagger-2">
+                Soy Mónica, una creadora de mundos visuales que encuentra magia en cada trazo. Mi viaje artístico
+                comenzó con la curiosidad de una niña que veía historias en las nubes y ahora se ha convertido en una
+                pasión que trasciende lo convencional.
+              </p>
+              <p class="text-white/80 leading-relaxed fade-up stagger-3">
+                Cada ilustración es un portal hacia emociones inexploradas, donde la técnica se encuentra con la
+                intuición para dar vida a universos que solo existen en la intersección entre el sueño y la realidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section - Mejorada -->
+  <section class="contact-section py-20" id="contacto">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <div class="contact-card fade-up">
+          <h2 class="text-5xl amatic font-bold text-white mb-6">Conectemos</h2>
+          <p class="text-white/90 text-xl mb-8">
+            ¿Tienes un proyecto en mente?
+          </p>
+          <p class="text-white/90 text-xl mb-8">Me encantaría ser parte de tu próxima historia visual.</p>
+          <div class="mb-8">
+            <a href="mailto:hola@example.com"
+              class="text-2xl font-medium text-white hover:text-white/80 transition-colors">
+              hola@nombreilustradora.com
+            </a>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/monix.artist/" class="social-link" title="Instagram" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.Linkedin.net/" class="social-link" title="Linkedin" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-link" title="Twitter" target="_blank">
+              <i class="fab fa-x-twitter fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-8">
+    <p class="text-lg">© 2025 Mónica | Todas las ilustraciones son obras originales. </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
