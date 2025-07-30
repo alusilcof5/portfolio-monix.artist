@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio de Mónica</title>
-  <link rel="icon" href="/image/monica.png" type="image/x-icon" />
+  <link rel="icon" href="./image/monica.png" type="image/x-icon" />
 
   <link rel="stylesheet" href="styles.css">
 
@@ -25,6 +25,7 @@
       <a href="#" class="text-3xl amatic font-bold text-white">Mónica</a>
       <ul class="flex space-x-6 text-xl amatic">
         <li><a href="#galeria" class="text-white hover:text-[#FF8C94] transition-colors">Mis Obras</a></li>
+        <li><a href="/page/details.html" class="text-white hover:text-[#FF8C94] transition-colors">Detalles</a></li>
         <li><a href="#sobre-mi" class="text-white hover:text-[#FF8C94] transition-colors">Sobre Mí</a></li>
         <li><a href="#contacto" class="text-white hover:text-[#FF8C94] transition-colors">Conectemos</a></li>
       </ul>
@@ -56,36 +57,97 @@
         </p>
       </div>
 
-      <!-- Secciones principales -->
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-screen-xl mx-auto px-6">
 
-  <!-- Ilustraciones Animadas -->
-  <div onclick="window.location.href='/page/animate.html'" class="group cursor-pointer transition-transform hover:scale-[1.01]">
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl">
-      <img src="/image/todas.png" alt="Ilustraciones Animadas" class="w-full h-[42rem] object-cover group-hover:scale-105 transition-transform duration-500">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-      <div class="absolute bottom-6 left-6 right-6 bg-[#FF8C94]/80 backdrop-blur-md rounded-xl p-6 text-white shadow-lg">
-        <h3 class="text-5xl amatic font-bold mb-2">Ilustraciones Animadas</h3>
-        <p class="text-white/90 text-xl mb-4">Personajes llenos de vida, color y fantasía que cobran alma en cada trazo.</p>
-        <div class="inline-flex items-center text-white font-medium group-hover:text-white transition-colors">
-          <span class="mr-2">Explorar Colección</span>
-          <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-        </div>
+
+      <div class="filter-container fade-up stagger-2">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="Naturaleza">Princesas</button>
+        <button class="filter-btn" data-filter="Personajes">Personajes</button>
+        <button class="filter-btn" data-filter="Fantasía">Fantasía</button>
       </div>
-    </div>
-  </div>
 
-  <!-- Ilustraciones Realistas -->
-  <div onclick="window.location.href='/page/realism.html'" class="group cursor-pointer transition-transform hover:scale-[1.01]">
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl">
-      <img src="/image/cole.jpeg" alt="Ilustraciones Realistas" class="w-full h-[42rem] object-cover group-hover:scale-105 transition-transform duration-500">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-      <div class="absolute bottom-6 left-6 right-6 bg-[#FF8C94]/80 backdrop-blur-md rounded-xl p-6 text-white shadow-lg">
-        <h3 class="text-5xl amatic font-bold mb-2">Ilustraciones Realistas</h3>
-        <p class="text-white/90 text-xl mb-4">Técnica refinada que captura la esencia y belleza de la realidad.</p>
-        <div class="inline-flex items-center text-white font-medium group-hover:text-white transition-colors">
-          <span class="mr-2">Explorar Colección</span>
-          <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+      <div class="illustration-grid" id="artworkGrid">
+        <div class="artwork-card" data-category="Naturaleza">
+          <div class="artwork-image">
+            <img src="/image/todas.png" alt="Ilustración Susurros del Bosque">
+            <div class="artwork-overlay">
+              <a href="/page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Susurros del Bosque</h3>
+            <p class="text-white/80 text-sm">Una exploración poética de la serenidad natural, donde cada hoja cuenta una
+              historia susurrada por el viento.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Personajes">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Blancanieves con una manzana en la mano">
+            <div class="artwork-overlay">
+              <a href="page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Blancanieves</h3>
+            <p class="text-white/80 text-sm">Una princesa encantadora atrapada entre la inocencia y la tentación.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Fantasía">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Reino de las Nubes">
+            <div class="artwork-overlay">
+              <a href="page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Reino de las Nubes</h3>
+            <p class="text-white/80 text-sm">Una dimensión etérea donde la arquitectura imposible danza entre nubes de
+              algodón y sueños cristalizados.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Naturaleza">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Océano de Memorias">
+            <div class="artwork-overlay">
+              <a href="/page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Océano de Memorias</h3>
+            <p class="text-white/80 text-sm">Las olas se convierten en recuerdos líquidos, cada una portando historias
+              del pasado hacia la eternidad.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Fantasía">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Guardiana de Estrellas">
+            <div class="artwork-overlay">
+              <a href="/page/details.html" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Guardiana de Estrellas</h3>
+            <p class="text-white/80 text-sm">Una figura mística que protege los secretos del cosmos, tejiendo
+              constelaciones con hilos de luz pura.</p>
+          </div>
+        </div>
+
+        <div class="artwork-card" data-category="Personajes">
+          <div class="artwork-image">
+            <img src="/image/blancanieves.png" alt="Alma de Fuego">
+            <div class="artwork-overlay">
+              <a href="#" class="view-btn">Ver Detalles</a>
+            </div>
+          </div>
+          <div class="artwork-content">
+            <h3 class="text-2xl amatic font-bold text-white mb-2">Alma de Fuego</h3>
+            <p class="text-white/80 text-sm">La pasión hecha forma, un personaje que irradia la intensidad de mil soles
+              en su mirada determinada.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -101,7 +163,7 @@
       <div class="max-w-7xl mx-auto">
         <div class="profile-card fade-up">
           <div class="flex flex-col lg:flex-row items-center gap-8">
-            <img src="/image/photo.png" alt="Foto de Monica" class="profile-image">
+            <img src="./image/photo.png" alt="Foto de Monica" class="profile-image">
             <div class="text-center lg:text-left">
               <h2 class="text-5xl amatic font-bold text-white mb-6 fade-up stagger-1">Sobre Mí</h2>
               <p class="text-white/90 text-lg leading-relaxed mb-6 fade-up stagger-2">
