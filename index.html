@@ -5,40 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio de Mónica</title>
-  <link rel="icon" href="/image/monica.png" type="image/x-icon" />
+  <link rel="icon" href="./image/monica.png" type="image/x-icon" />
+
   <link rel="stylesheet" href="styles.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body class="bg-black text-white">
-
-  <!-- Navbar -->
+<header>
+  <!-- Navbar - Corregida para mejor visibilidad -->
   <nav class="bg-black/70 fixed w-full z-50 top-0 shadow-md backdrop-blur">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <a href="#" class="text-5xl amatic font-bold text-white">Mónica</a>
-
-      <!-- Botón hamburguesa (visible solo en móvil) -->
-      <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none" aria-label="Abrir menú de navegación">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Menú de navegación -->
-      <ul id="menu" class="hidden md:flex space-x-8 text-3xl amatic">
-        <li><a href="#galeria" class="block py-2 hover:text-[#FF8C94] transition-colors">Mis Obras</a></li>
-        <li><a href="#sobre-mi" class="block py-2 hover:text-[#FF8C94] transition-colors">Sobre Mí</a></li>
-        <li><a href="#contacto" class="block py-2 hover:text-[#FF8C94] transition-colors">Conectemos</a></li>
+      <ul class="flex space-x-8 text-3xl amatic">
+        <li><a href="#galeria" class="text-white hover:text-[#FF8C94] transition-colors">Mis Obras</a></li>
+        <li><a href="#sobre-mi" class="text-white hover:text-[#FF8C94] transition-colors">Sobre Mí</a></li>
+        <li><a href="#contacto" class="text-white hover:text-[#FF8C94] transition-colors">Conectemos</a></li>
       </ul>
     </div>
-
-    <!-- Menú móvil (desplegable) -->
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 text-3xl amatic">
-      <a href="#galeria" class="block py-2 hover:text-[#FF8C94]">Mis Obras</a>
-      <a href="#sobre-mi" class="block py-2 hover:text-[#FF8C94]">Sobre Mí</a>
-      <a href="#contacto" class="block py-2 hover:text-[#FF8C94]">Conectemos</a>
-    </div>
   </nav>
+</header>
 
 <body>
   <!-- Hero Section - Mantenida igual -->
@@ -70,7 +62,7 @@
   <!-- Ilustraciones Animadas -->
   <div onclick="window.location.href='./page/animate.html'" class="group cursor-pointer transition-transform hover:scale-[1.01]">
     <div class="relative overflow-hidden rounded-3xl shadow-2xl">
-      <img src="/image/todas.png" alt="Ilustraciones Animadas" class="w-full h-[42rem] object-cover group-hover:scale-105 transition-transform duration-500">
+      <img src="./image/todas.png" alt="Ilustraciones Animadas" class="w-full h-[42rem] object-cover group-hover:scale-105 transition-transform duration-500">
       <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
       <div class="absolute bottom-6 left-6 right-6 bg-[#FF8C94]/80 backdrop-blur-md rounded-xl p-6 text-white shadow-lg">
         <h3 class="text-5xl amatic font-bold mb-2">Ilustraciones Animadas</h3>
@@ -86,7 +78,7 @@
   <!-- Ilustraciones Realistas -->
   <div onclick="window.location.href='./page/realism.html'" class="group cursor-pointer transition-transform hover:scale-[1.01]">
     <div class="relative overflow-hidden rounded-3xl shadow-2xl">
-      <img src="/image/cole.jpeg" alt="Ilustraciones Realistas" class="w-full h-[42rem] object-cover group-hover:scale-105 transition-transform duration-500">
+      <img src="./image/cole.jpeg" alt="Ilustraciones Realistas" class="w-full h-[42rem] object-cover group-hover:scale-105 transition-transform duration-500">
       <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
       <div class="absolute bottom-6 left-6 right-6 bg-[#FF8C94]/80 backdrop-blur-md rounded-xl p-6 text-white shadow-lg">
         <h3 class="text-5xl amatic font-bold mb-2">Ilustraciones Realistas</h3>
